@@ -9,7 +9,7 @@
         <div class="col-md-4">
             <div class="card" style="width: 70rem;">
                 <div class="card-body">
-                    <h1 class="card-title"> No hay categorias registradas aun</h1>
+                    <h1 class="card-title"> No hay  registros aun </h1>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
       
             <tr>
             <td> {{ $c->id }} </td>
-            
+
             <td> {{ $c->ISBN }} </td>
 
             <td> {{ $c->titulo }} </td>

@@ -23,3 +23,5 @@ Route::get('editorial', [Editoriales::class, 'index'] )->name('listadoEditoriale
 Route::get('libros/registro', [libros::class , 'formularioreg'])->name('registrarlibros');
 
 Route::post('libros/registro', [libros::class , 'registrar'])->name('registrarlibros');
+
+Route::get('editorial/actualizar/{id}', [editoriales::class, 'formularioAct'])->name('actualizaEditorial');
