@@ -19,4 +19,7 @@ Route::get('/', [presentacion::class, 'index']) ;
 
 Route::get('libros', [libros::class, 'index'] )->name('listadolibros');
 
+Route::get('editorial', [Editoriales::class, 'index'] )->name('listadoEditoriales');
+Route::get('libros/registro', [libros::class , 'formularioreg'])->name('registrarlibros');
 
+Route::post('libros/registro', [libros::class , 'registrar'])->name('registrarlibros');

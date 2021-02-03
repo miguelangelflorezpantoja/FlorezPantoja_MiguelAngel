@@ -1,6 +1,8 @@
 @section('content')
 @extends('layout.master')
 @if(count($libro)==0)
+
+<a href="{{route('detalleCliente', $c->id)}}" class="btn btn-primary" > Ver detalles </a>
 <br><br><br><br><br><br>
 <div class="container" align="center"> 
     <div class="row">
@@ -45,7 +47,7 @@
             <td> {{ $c->cedulaCliente }} </td>
             <td> {{ $c->direccionCliente }} </td>
             <td> {{ $c->telefonoCliente }} </td>
-            <td>  <a href="{{route('detalleCliente', $c->id)}}" class="btn btn-primary" > Ver detalles </a> </td>
+            <td>  </td>
             
             </tr>
         

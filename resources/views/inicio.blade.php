@@ -19,7 +19,7 @@
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Registro de estudiantes</h3>
+        <h3 class="h3-responsive">Registro</h3>
       </div>
     </div>
    

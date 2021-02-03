@@ -18,19 +18,21 @@ class libros extends Controller
 
     public function formularioReg(){
         $categorias = editorial::all();
-        return view('libro.form_registro',compact('categorias'));
+        return view('libros/form_reglib',compact('editorial'));
     }
 
     public function registrar( Request $request){
 
         $producto = new libro ();
-        $producto->nombreProducto = $request->input('nombrepro');
-        $producto->cantidadProducto = $request->input('cantidadpro');
-        $producto->precioProducto = $request->input('preciopro');
-        $producto->fotoProducto = $request->input('fotopro');
-        $producto->categoria = $request->input('categoria');
+        $producto->ISBN = $request->input('ISBN');
+        $producto->itulo = $request->input('titulo');
+        $producto->precio= $request->input('precio');
+        $producto->stock = $request->input('stock');
+        $producto->editorial= $request->input('editorial');
         $producto->save();
-        return redirect()->route('listadoProductos');
+        return redirect()->route('listadolibros');
     }
+
+
 
 }
